@@ -249,7 +249,7 @@ export default class TwilioVideo extends Component {
     encodingParameters = null,
     enableNetworkQualityReporting = false,
     dominantSpeakerEnabled = false,
-    videoParams = {},
+    videoParams = {}
   }) {
     TWVideoModule.connect(
       accessToken,
