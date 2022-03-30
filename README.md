@@ -18,13 +18,13 @@ People using a version < 1.0.1 please move to 1.0.1 since the project changed a 
 #### Option A: yarn
 
 ```shell
-yarn add https://github.com/blackuy/react-native-twilio-video-webrtc
+yarn add https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc
 ```
 
 #### Option B: npm
 
 ```shell
-npm install https://github.com/blackuy/react-native-twilio-video-webrtc --save
+npm install https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc --save
 ```
 
 ### iOS
@@ -102,7 +102,7 @@ TwilioVideo version 1.3.8 (latest) has the following know issues.
 As with iOS, make sure the package is installed:
 
 ```shell
-yarn add https://github.com/blackuy/react-native-twilio-video-webrtc
+yarn add https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc
 ```
 
 Then add the library to your `settings.gradle` file:
