@@ -1,6 +1,6 @@
 ![GitHub Logo](/logo.png)
 
-# Twilio Video (WebRTC) for React Native
+# Custom Twilio Video (WebRTC) for React Native
 
 Platforms:
 - iOS
@@ -394,5 +394,4 @@ participant views now expect `participantSid` and `videoTrackSid` keys in the `t
 
 ## Contact
 
-- Martín Fernández <fmartin91@gmail.com>
-- Gaston Morixe <gaston@gastonmorixe.com>
+- Yoram Boccia <yoram@intuitionrobotics.com>
