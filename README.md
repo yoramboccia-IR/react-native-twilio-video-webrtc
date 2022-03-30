@@ -10,21 +10,21 @@ People using a version < 1.0.1 please move to 1.0.1 since the project changed a 
 
 ## Installation
 
-- react-native >= 0.40.0: install react-native-twilio-video-webrtc@1.0.1
-- react-native < 0.40.0: install react-native-twilio-video-webrtc@1.0.0
+- react-native >= 0.40.0: install ir-react-native-custom-twilio-video-webrtc@1.0.1
+- react-native < 0.40.0: install ir-react-native-custom-twilio-video-webrtc@1.0.0
 
 ### Install Node Package
 
 #### Option A: yarn
 
 ```shell
-yarn add https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc
+yarn add https://github.com/yoramboccia-IR/ir-react-native-custom-twilio-video-webrtc
 ```
 
 #### Option B: npm
 
 ```shell
-npm install https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc --save
+npm install https://github.com/yoramboccia-IR/ir-react-native-custom-twilio-video-webrtc --save
 ```
 
 ### iOS
@@ -34,7 +34,7 @@ npm install https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc -
 1. Add this package to your Podfile
 
 ```ruby
-pod 'react-native-twilio-video-webrtc', path: '../node_modules/react-native-twilio-video-webrtc'
+pod 'ir-react-native-custom-twilio-video-webrtc', path: '../node_modules/ir-react-native-custom-twilio-video-webrtc'
 ```
 
 Note that this will automatically pull in the appropriate version of the underlying `TwilioVideo` pod.
@@ -62,14 +62,14 @@ pod install
 3. Add the XCode project to your own XCode project's `Libraries` directory from
 
 ```
-node_modules/react-native-twilio-video-webrtc/ios/RNTwilioVideoWebRTC.xcodeproj
+node_modules/ir-react-native-custom-twilio-video-webrtc/ios/RNTwilioVideoWebRTC.xcodeproj
 ```
 
 4. Add `libRNTwilioVideoWebRTC.a` to your XCode project target's `Linked Frameworks and Libraries`
 
 5. Update `Build Settings`
 
-Find `Search Paths` and add `$(SRCROOT)/../node_modules/react-native-twilio-video-webrtc/ios` with `recursive` to `Framework Search Paths` and `Library Search Paths`
+Find `Search Paths` and add `$(SRCROOT)/../node_modules/ir-react-native-custom-twilio-video-webrtc/ios` with `recursive` to `Framework Search Paths` and `Library Search Paths`
 
 #### Post install
 
@@ -102,14 +102,14 @@ TwilioVideo version 1.3.8 (latest) has the following know issues.
 As with iOS, make sure the package is installed:
 
 ```shell
-yarn add https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc
+yarn add https://github.com/yoramboccia-IR/ir-react-native-custom-twilio-video-webrtc
 ```
 
 Then add the library to your `settings.gradle` file:
 
 ```
-include ':react-native-twilio-video-webrtc'
-project(':react-native-twilio-video-webrtc').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-twilio-video-webrtc/android')
+include ':ir-react-native-custom-twilio-video-webrtc'
+project(':ir-react-native-custom-twilio-video-webrtc').projectDir = new File(rootProject.projectDir, '../node_modules/ir-react-native-custom-twilio-video-webrtc/android')
 ```
 
 And include the library in your dependencies in `android/app/build.gradle`:
@@ -119,7 +119,7 @@ dependencies {
     .....
     .....
     .....
-    compile project(':react-native-twilio-video-webrtc')
+    compile project(':ir-react-native-custom-twilio-video-webrtc')
 }
 ```
 
@@ -201,7 +201,7 @@ import {
   TwilioVideo,
   TwilioVideoLocalView,
   TwilioVideoParticipantView
-} from 'react-native-twilio-video-webrtc'
+} from 'ir-react-native-custom-twilio-video-webrtc'
 ```
 
 - `TwilioVideo` / is responsible for connecting to rooms, events delivery and camera/audio.
@@ -216,7 +216,7 @@ import {
   TwilioVideoLocalView,
   TwilioVideoParticipantView,
   TwilioVideo
-} from 'react-native-twilio-video-webrtc';
+} from 'ir-react-native-custom-twilio-video-webrtc';
 
 const Example = (props) => {
   const [isAudioEnabled, setIsAudioEnabled] = useState(true);

@@ -14,5 +14,5 @@ Tell us what happens instead
 - **React Native version**:
 - **React Native platform + platform version**: iOS 9.0
 
-### react-native-twilio-video-webrtc
+### ir-react-native-custom-twilio-video-webrtc
 **Version**: npm version or "master"

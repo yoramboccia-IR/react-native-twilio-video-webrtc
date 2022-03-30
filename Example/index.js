@@ -15,7 +15,7 @@ import {
   TwilioVideoLocalView,
   TwilioVideoParticipantView,
   TwilioVideo,
-} from "react-native-twilio-video-webrtc";
+} from "ir-react-native-custom-twilio-video-webrtc";
 
 import styleSheet from "./styles";
 

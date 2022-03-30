@@ -1,4 +1,4 @@
-declare module "react-native-twilio-video-webrtc" {
+declare module "ir-react-native-custom-twilio-video-webrtc" {
   import { ViewProps } from "react-native";
   import React from "react";
 

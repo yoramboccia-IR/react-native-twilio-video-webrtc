@@ -2,12 +2,12 @@ version: 2.0
 
 attach_workspace: &attach_workspace
   attach_workspace:
-    at: ~/react-native-twilio-video-webrtc
+    at: ~/ir-react-native-custom-twilio-video-webrtc
 
 docker_defaults: &docker_defaults
   docker:
     - image: circleci/python:3.6.4-stretch-node-browsers
-  working_directory: ~/react-native-twilio-video-webrtc
+  working_directory: ~/ir-react-native-custom-twilio-video-webrtc
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
             - node_modules
             - ~/.cache/yarn
       - persist_to_workspace:
-          root: ~/react-native-twilio-video-webrtc
+          root: ~/ir-react-native-custom-twilio-video-webrtc
           paths:
             - node_modules
   test:

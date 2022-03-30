@@ -9,6 +9,6 @@ target 'Example' do
     'Core',
     'CxxBridge'
   ]
-  pod 'react-native-twilio-video-webrtc', path: '../../'
+  pod 'ir-react-native-custom-twilio-video-webrtc', path: '../../'
   pod 'Folly', podspec: '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 end
