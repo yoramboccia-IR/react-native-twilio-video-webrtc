@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license        = package['license']
   s.author         = package['author']
   s.homepage       = package['homepage']
-  s.source         = { git: 'https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc/tree/release/v1.0', tag: s.version }
+  s.source         = { git: 'https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc', tag: s.version }
 
   s.requires_arc   = true
   s.platform       = :ios, '10.0'
