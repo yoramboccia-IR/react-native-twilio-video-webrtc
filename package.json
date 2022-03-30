@@ -1,12 +1,7 @@
 {
-  "name": "react-native-twilio-video-webrtc",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/blackuy/react-native-twilio-video-webrtc.git"
-  },
-  "homepage": "https://github.com/blackuy/react-native-twilio-video-webrtc",
-  "version": "2.1.1",
-  "description": "Twilio Video WebRTC for React Native.",
+  "name": "ir-react-native-custom-twilio-video-webrtc",
+  "version": "1.0.0",
+  "description": "twilio video webrtc for react native with customizing options",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +12,18 @@
   "standard": {
     "parser": "babel-eslint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc/issues"
+  },
+  "homepage": "https://github.com/yoramboccia-IR/react-native-twilio-video-webrtc#readme",
   "keywords": [
+    "twilio",
+    "twilio-video",
+    "webrtc",
     "react-native"
   ],
   "author": "",
