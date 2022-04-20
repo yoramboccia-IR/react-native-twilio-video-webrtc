@@ -43,7 +43,6 @@ static int32_t kRCTTWVideoCameraSourceFrameRate = 15;
 TVIVideoFormat *RCTTWVideoModuleCameraSourceSelectVideoFormatBySize(AVCaptureDevice *device, CMVideoDimensions targetSize) {
     TVIVideoFormat *selectedFormat = nil;
 
-    BOOL passedParamsAreGood = kRCTTWVideoAppCameraSourceDimensions.width >= targetSize.width && kRCTTWVideoAppCameraSourceDimensions.height >= targetSize.height;
     // Ordered from smallest to largest.
     NSOrderedSet<TVIVideoFormat *> *formats = [TVICameraSource supportedFormatsForDevice:device];
 
@@ -53,12 +52,6 @@ TVIVideoFormat *RCTTWVideoModuleCameraSourceSelectVideoFormatBySize(AVCaptureDev
         }
 
         selectedFormat = format;
-
-        if (passedParamsAreGood) {
-            selectedFormat.frameRate = kRCTTWVideoCameraSourceFrameRate;
-            selectedFormat.dimensions = kRCTTWVideoAppCameraSourceDimensions;
-            break;
-        }
 
         // ^ Select whatever is available until we find one we like and short-circuit
         CMVideoDimensions dimensions = format.dimensions;
@@ -198,7 +191,12 @@ RCT_EXPORT_METHOD(startLocalVideo) {
     camera = [TVICameraSource captureDeviceForPosition:AVCaptureDevicePositionFront];
   }
 
-  [self.camera startCaptureWithDevice:camera completion:^(AVCaptureDevice *device,
+  TVIVideoFormat *selectedFormat = RCTTWVideoModuleCameraSourceSelectVideoFormatBySize(camera, (CMVideoDimensions){240, 180});
+  selectedFormat.frameRate = 10;
+
+  NSLog(@"%@", selectedFormat);
+
+  [self.camera startCaptureWithDevice:camera format:selectedFormat completion:^(AVCaptureDevice *device,
           TVIVideoFormat *startFormat,
           NSError *error) {
       if (!error) {
