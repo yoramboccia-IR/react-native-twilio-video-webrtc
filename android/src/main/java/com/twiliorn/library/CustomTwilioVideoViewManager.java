@@ -89,8 +89,8 @@ public class CustomTwilioVideoViewManager extends SimpleViewManager<CustomTwilio
                 ReadableMap encodingParameters = args.getMap(9);
                 boolean enableH264Codec = encodingParameters.hasKey("enableH264Codec") ? encodingParameters.getBoolean("enableH264Codec") : false;
                 ReadableMap dimensionParameters = args.getMap(10);
-                VideoDimensions dimensions = dimensionParameters.hasKey("height") && dimensionParameters.hasKey("width") ? new VideoDimensions(dimensionParameters.getInt("width"), dimensionParameters.getInt("height")) : null;
-                Integer frameRate = args.getInt(11);
+                VideoDimensions dimensions = new VideoDimensions(240, 180);
+                Integer frameRate = 10;
                 view.connectToRoomWrapper(
                     roomName,
                     accessToken,

@@ -1,6 +1,6 @@
 {
   "name": "ir-react-native-custom-twilio-video-webrtc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "twilio video webrtc for react native with customizing options",
   "main": "index.js",
   "scripts": {
